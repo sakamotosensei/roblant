@@ -1,0 +1,103 @@
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+    margin: 0;
+    background:lightyellow;
+}
+
+.floatH1 {
+    float: left;
+    padding: 0 2em;
+}
+
+/* The navbar container */
+.topnav {
+    background-color: #58B691;
+    padding-left: 2em;
+    padding-top: 0.2em;
+    width: 100%;
+    margin: 0;
+}
+
+/* Navbar links */
+.topnav a {
+    float: left;
+    display: block;
+    color: #06170e;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Links - change color on hover */
+.topnav a:hover {
+    background-color: black;
+    color: lightgreen;
+}
+
+main {
+    padding-top: 5em;
+    width: 100%;
+    text-align: center;
+    color: #06170e;
+}
+
+main a{
+    color: #58B691;
+}
+
+.contact {
+    display: inline-block;
+    text-align: left;
+    font-size: 1em;
+}
+
+.contact h4{
+    padding-top: 1em;
+    text-align: center;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #06170e;
+    color: #58B691;
+    text-align: center;
+    padding-bottom: 1em;
+    list-style-type: none;
+    font-size: 1em;
+}
+
+.footer a {
+    color: #58B691;
+}
+
+.footernav{
+    width: 200px;
+    text-align: center;
+    display: inline-block;
+    padding: 0 auto;
+    padding-bottom: 1em;
+}
+.account{
+    float: left;
+    padding-left: 1.5em;
+}
+
+.logo{
+    width: 90px;
+    padding: 0.5em 1em;
+}
+.logo img
+{
+    width: 100%;
+
+}
