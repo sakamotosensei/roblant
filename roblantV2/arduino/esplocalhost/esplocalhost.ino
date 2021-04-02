@@ -4,8 +4,8 @@
 extern "C" {
 #include <user_interface.h>
 }
-const char* ssid = "telenet-9B4A8"; // The name of the WiFi network
-const char* password = "Sato@Lint13!"; // The password of the WiFi network
+const char* ssid = ""; // The name of the WiFi network
+const char* password = ""; // The password of the WiFi network
 
 uint8_t mac[6] {0x5C, 0xCF, 0x7F, 0x07, 0x55, 0x47}; // Defines the mac address of the ESP
 const String host = "192.168.0.128"; // Defines where data is being sent8
