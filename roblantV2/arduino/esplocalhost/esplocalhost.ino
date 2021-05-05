@@ -4,13 +4,13 @@
 extern "C" {
 #include <user_interface.h>
 }
-const char* ssid = ""; // The name of the WiFi network
-const char* password = ""; // The password of the WiFi network
+const char* ssid = "telenet-9B4A8"; // The name of the WiFi network
+const char* password = "Sato@Lint13!"; // The password of the WiFi network
 
 uint8_t mac[6] {0x5C, 0xCF, 0x7F, 0x07, 0x55, 0x47}; // Defines the mac address of the ESP
 const String host = "192.168.0.128"; // Defines where data is being sent8
 
-String output; // Declares the variable used for storage of the data sent from the Arduino
+String output = ""; // Declares the variable used for storage of the data sent from the Arduino
 char endString = '$'; // Sets '$' as the string termination so that the ESP knows where the transmitted data ends
 SoftwareSerial s(13, 12); // Opens the serial communication with the arduino and sets the RX and TX pins of the ESP
 
@@ -46,7 +46,9 @@ void setup()
   /*=======================================================================*/
 }
 void loop() {
+  String output = "";
   if (s.available()) { // Checks if data from the Arduino is available
+    s.readStringUntil('_');
     output = s.readStringUntil(endString); // Reads the transmitted string until the termination character '$'
     delay(1000); // wait one second
     Serial.println(output);//prints data to serial monitor
@@ -103,5 +105,5 @@ void loop() {
 
   /*=====================================================================*/
 
-  delay(10000); // Wait 10 seconds
+  delay(5000); // Wait 10 seconds
 }
